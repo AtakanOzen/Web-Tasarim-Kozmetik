@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="shortcut icon" type="x-icon" href="resim/minilogo.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakkımızda</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+  body{
+background-image: url("resim/40.png");
+background-size:contain;
+background-repeat: inherit;
+  }
+
+</style>
+
+
+
+<body>
+    <header class="header">
+      <img src="resim/LOGO.png" class="logo">
+        <nav class="navbar">
+          <a href="atakos.html">Anasayfa</a>
+          <a href="urunler.html">Ürünler</a>
+          <a href="kampanyalar.html">Kampanyalar</a>
+          <a href="onerimiz.html">Öneri</a>
+          <a href="kadro.html">Kadromuz</a>
+          <a href="hakkimizda.html">Hakkımızda</a>
+            
+        </nav>
+    </header>
+
+
+    <section>
+        <div class="container flex">
+          <div class="left">
+            <div class="main_image">
+              <img src="resim/hakkimizda2.jpg" class="slide">
+            </div>
+            <div class="option img">
+              <img src="resim/hakkimizda2.jpg" onclick="img('resim/hakkimizda2.jpg')">
+              <img src="resim/hakkimizda4.jpg" onclick="img('resim/hakkimizda4.jpg')">
+              <img src="resim/hakkimizda5.jpg" onclick="img('resim/hakkimizda5.jpg')">
+              <img src="resim/hakkimizda3.jpg" onclick="img('resim/hakkimizda3.jpg')">
+              <img src="resim/hakkimizda0.jpg" onclick="img('resim/hakkimizda0.jpg')">
+              <img src="resim/hakkimizda1.jpg" onclick="img('resim/hakkimizda1.jpg')">
+            </div>
+          </div>
+          <div class="right">
+            <h3>Velwet Olarak;</h3>
+            
+            <p>Cilt bakımında en son yenilikleri ve etkili çözümleri sunmayı amaçlayan bir platform olarak, özellikle kırışıklık karşıtı bakım konusunda uzmanlaşıyoruz.Kore cilt bakımı felsefesinden ilham alarak, doğal ve yenilikçi ürünlerle daha genç ve sağlıklı bir cilde kavuşmanıza yardımcı olmayı hedefliyoruz.Kore cilt bakımı, dünyada anti-aging (yaşlanma karşıtı) bakımın öncüsü olarak kabul edilmekte ve kırışıklıkların önlenmesi, cilt elastikiyetinin artırılması gibi konularda devrim niteliğinde çözümler sunmaktadır.Biz de bu anlayışı benimseyerek, Kore'deki cilt bakımı yöntemlerini ve ürünlerini kullanıcılarımıza ulaştırıyoruz.Platformumuzda, kırışıklıklarla mücadele etmek için etkili içerikler, ürün incelemeleri ve cilt bakım tüyoları sunarken, Kore cilt bakımının sırlarını keşfetmenize yardımcı olacak rehberler de bulacaksınız.Cilt yaşlanmasına karşı doğru adımları atarak daha genç ve canlı bir görünüm elde etmenizi sağlamayı misyon ediniyoruz.</p>      
+            
+
+          </div>
+        </div>
+      </section>
+      
+      <script>
+        function img(anything) {
+          document.querySelector('.slide').src = anything;
+        }
+    
+        function change(change) {
+          const line = document.querySelector('.home');
+          line.style.background = change;
+        }
+      </script>
+
+
+  <p id="2demo" style="text-align: center; font-size: 20px; color: blueviolet; background-color: rgb(252, 223, 62);"></p>
+
+  <script>
+  document.getElementById("2demo").innerHTML = '%15 %15 %15 %15 %15 %15 %15 %15 %15 %15 %15 %15 %15 %15 %15 %15 %15 %15 %15 %15 %15 %15 %15 %15 %15 %15 %15 %15 %15 %15 %15 %15 %15 %15 %15';
+  </script>
+</body>
+</html>

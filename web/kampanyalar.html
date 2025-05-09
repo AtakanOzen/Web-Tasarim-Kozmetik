@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="resim/minilogo.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kampanyalar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <style>
+        body{
+    background-image: url("resim/40.png");
+    background-size:cover;
+    background-repeat: inherit;
+        }
+    
+    </style>
+
+    <header class="header">
+        <img src="resim/LOGO.png" class="logo">
+        <nav class="navbar">
+            <a href="atakos.html">Anasayfa</a>
+            <a href="urunler.html">Ürünler</a>
+            <a href="kampanyalar.html">Kampanyalar</a>
+            <a href="onerimiz.html">Öneri</a>
+            <a href="kadro.html">Kadromuz</a>
+            <a href="hakkimizda.html">Hakkımızda</a>
+         
+        </nav>
+    </header>
+
+
+    <div class="container flex" style="background-color: rgb(232, 207, 255); opacity: 0.9;  text-align: center; position: fixed; top: 45%; left: 50%; transform: translate(-50%, -50%); height: 500px; width: 350px;">
+<form id="abonelikFormu">
+<div>
+    <video src="resim/kdaeveheart.mp4"width="230px" controls autoplay loop muted></video>
+    <br>
+    <label for="baslik" style=" font-size: larger; font-weight: 800;">Kampanyalardan Haberdar Olmak İçin Abone Olun!</label>
+    <br>
+
+<input type="text" id="fname" name="fname" placeholder="Ad">
+<input type="text" id="lname" name="lname" placeholder="Soyad">
+</div>
+<br>
+<div>
+
+<input type="text" id="tname" name="tname" placeholder="E-posta">
+</div>
+<br>
+<div>
+
+<input type="text" id="yname" name="yname" placeholder="Telefon Numarası">
+</div>
+
+<div>
+
+
+<input type="radio" id="Erkek" name="title" value="Erkek" class="radiobutonlar">
+<label for="Erkek">Erkek/</label class="radiobutonlar">
+
+<input type="radio" id="Kadın" name="title" value="Kadın" class="radiobutonlar">
+<label for="Kadın">Kadın/</label class="radiobutonlar">
+
+<input type="radio" id="Belirtmek_İstemiyorum" name="title" value="Belirtmek_İstemiyorum" class="radiobutonlar">
+<label for="Belirtmek_İstemiyorum">Belirtmek İstemiyorum/</label class="radiobutonlar">
+ 
+
+</div>
+<br>
+<div>
+<input type="submit" value="Abone Ol" class="aboneolbutonu"  onclick="alert('Abone olduğun için teşekkürler! Artık anlık indirimler ve güncel fırsatlar bir tık uzağında.'); return false;">
+</div>
+</div>
+<script src="script.js"></script>
+</form>
+
+
+
+<p id="2demo" style="position: fixed;bottom: 45px; width: 100%; 
+    margin: 0; text-align: center; font-size: 20px; color: blueviolet; background-color: rgb(252, 223, 62);"></p>
+<script>
+document.getElementById("2demo").innerHTML = '%15 %15 %15 %15 %15 %15 %15 %15 %15 %15 %15 %15 %15 %15 %15 %15 %15 %15 %15 %15 %15 %15 %15 %15 %15 %15 %15 %15 %15 %15 %15 %15 %15 %15 %15';
+</script>
+
+
+</body>
+
+</html>

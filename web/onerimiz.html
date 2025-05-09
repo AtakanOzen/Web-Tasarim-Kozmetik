@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="resim/minilogo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Önerilerimiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <style>
+        body{
+    background-image: url("resim/40.png");
+    background-size:cover;
+    background-repeat: inherit;
+        }
+    
+    </style>
+     <header class="header">
+        <img src="resim/LOGO.png" class="logo">
+        <nav class="navbar">
+            <a href="atakos.html">Anasayfa</a>
+            <a href="urunler.html">Ürünler</a>
+            <a href="kampanyalar.html">Kampanyalar</a>
+            <a href="onerimiz.html">Öneri</a>
+            <a href="kadro.html">Kadromuz</a>
+            <a href="hakkimizda.html">Hakkımızda</a>
+         
+        </nav>
+    </header>
+    <div class="container flex" style="background-color: rgb(242, 242, 242); opacity: 0.8; text-align: center; position: fixed; top: 45%; left: 50%; transform: translate(-50%, -50%);  height: 500px; width: 350px;">
+    <form id="oneriformu">   
+        <br>
+    <label for="baslik" style=" font-size: larger; font-weight: 800;">Bütçeye uygun ürün önerilerimizi görmek için lütfen deneyiniz.</label>
+        <br>
+        <br>
+        <input id="butce" placeholder="Bütçenizin sayı kısmı." />
+        <button type="button" onclick="myFunction()">Öğren!</button>
+        <p id="demobutce" class="democlass"></p>
+<br>
+        <script>
+            function myFunction() {
+              let butceniz;
+              let butce = Number(document.getElementById("butce").value);
+              if (isNaN(butce)) {
+                butceniz = "Lütfen sadece sayı giriniz. ";
+              } else {
+                butceniz = (butce <= 1000) ? "Size önerimiz olan ürünlerimiz: <br> +Allure Esans(880 TL)+ <br> +Illumination Krem(780 TL)+ <br> +Kaine Salvation Krem(650 TL)+ " : "Size önerimiz olan ürünlerimiz: <br> +From Climax Serum(1249,99 TL)+ <br> +Voracity Honey Serum(1169,98 TL) <br> +Allure Esans(880 TL)+ <br> +Illumination Krem(780 TL)+ <br> +Kaine Salvation Krem(650 TL)+ ";
+              }
+              document.getElementById("demobutce").innerHTML = butceniz + "<br> !İyi alışverişler dileriz!";
+            }
+            </script>
+            
+
+
+
+
+    </div>
+    
+    
+</body>
+</html>

@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #fefaee;
+}
+.logo{
+    width: 10%;
+    position:absolute;
+
+}
+h1 {
+    font-size: 120px;
+    text-align: center;
+    color: rgba(255, 255, 255, .4);
+}
+
+.parallax-1 {
+    background: url('resim/snake.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.parallax-2 {
+    background: url('resim/goldsnkae.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.parallax-3 {
+    background: url('resim/eve.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.parallax-inner {
+    padding: 10% 0;
+}
+
+h2 {
+    font-size: 32px;
+    color: #555;
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin: 20px 0 10px;
+}
+
+p {
+    font-size: 16px;
+    color: #555;
+    text-align: justify;
+    line-height: 30px;
+    margin: 0 50px 40px;
+}
+
+p:nth-of-type(2),
+p:nth-of-type(3) {
+    margin: 40px 50px;
+}
+
+.buton1{
+    font-size: 16px;
+    width: 150px;
+    height: 50px;
+    margin: 10px auto;
+    display: block;
+             
+}
+
+.buton2{
+    font-size: 16px;
+    width: 150px;
+    height: 50px;
+    margin: 10px auto;
+    display: block;
+}
+
+.buton3{
+    font-size: 16px;
+    width: 150px;
+    height: 50px;
+    margin: 20px auto;
+    display: block;
+}
+
+.wrinkle{
+    width: 100px;
+    margin: 20px auto;
+    display: block;
+   text-align: center;
+}
+
+.header {
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: rgba(255, 255, 255, .1);
+    display: flex;
+    justify-content:end;
+    align-items:center;
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid rgba(255, 255, 255, .2);
+}
+
+.navbar a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    margin-left: 50px;
+    transition: .3s;
+    text-align: end;
+}
+.navbar a:hover {
+    color: rgb(148, 0, 171);
+}
+.logo{
+    position: relative;
+    left: 0;
+    margin-right: auto;
+}
+
+
+
+
+
+
+
+.container {
+    max-width: 75%;
+    margin: auto;
+    height: 90vh;
+    margin-top: 5%;
+    background: white;
+    box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.3);
+  }
+  
+  .left, .right {
+    width: 50%;
+    padding: 30px;
+  }
+  
+  .flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .flex1 {
+    display: flex;
+  }
+  
+  .main_image {
+    width: auto;
+    height: auto;
+  }
+  
+  .option img {
+    width: 75px;
+    height: 75px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .right {
+    padding: 50px 100px 50px 70px;
+  }
+  
+  h3 {
+    color: #000000;
+    margin: 20px 10px 30px 30px;
+    font-size: 25px;
+  }
+  
+  
+  p {
+    margin: 20px 0 50px 0;
+    line-height: 25px;
+  }
+  
+
+  .buton01 {
+    width: 350px;
+    height: 70px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: #8f0d0d;
+    color: white;
+    margin-top: 20%;
+    border-radius: 30px;
+    cursor: pointer; 
+    font-size: larger;
+  }
+
+
+
+
+  .slide1 {
+    width: 300px;
+    height: 200px;
+    position: relative;
+    
+  }
+  
+  .slide1 img {
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s;
+  } 
+  
+  .slide1:hover img {
+    opacity: 0;
+  }
+  
+  .slide1::before {
+    content: "";
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 530px;
+    background-image: url('resim/serum1.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  
+  .slide1:hover::before {
+    opacity: 1;
+  }
+
+
+
+
+
+
+
+  .slide2 {
+    width: 300px;
+    height: 200px;
+    position: relative;
+  }
+  
+  .slide2 img {
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s;
+  } 
+  
+  .slide2:hover img {
+    opacity: 0;
+  }
+  
+  .slide2::before {
+    content: "";
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 530px;
+    background-image: url('resim/esans.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  
+  .slide2:hover::before {
+    opacity: 1;
+  }
+
+
+
+
+
+  .slide3 {
+    width: 300px;
+    height: 200px;
+    position: relative;
+  }
+  
+  .slide3 img {
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s;
+  } 
+  
+  .slide3:hover img {
+    opacity: 0;
+  }
+  
+  .slide3::before {
+    content: "";
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 530px;
+    background-image: url('resim/serum0.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  
+  .slide3:hover::before {
+    opacity: 1;
+  }
+
+
+
+
+  .slide4 {
+    width: 300px;
+    height: 200px;
+    position: relative;
+  }
+  
+  .slide4 img {
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s;
+  } 
+  
+  .slide4:hover img {
+    opacity: 0;
+  }
+  
+  .slide4::before {
+    content: "";
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 530px;
+    background-image: url('resim/krem1.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  
+  .slide4:hover::before {
+    opacity: 1;
+  }
+
+
+
+
+  
+  .slide5 {
+    width: 300px;
+    height: 200px;
+    position: relative;
+  }
+  
+  .slide5 img {
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s;
+  } 
+  
+  .slide5:hover img {
+    opacity: 0;
+  }
+  
+  .slide5::before {
+    content: "";
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 530px;
+    background-image: url('resim/krem0.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  
+  .slide5:hover::before {
+    opacity: 1;
+  }
+
+  .aboneolbutonu{
+    width: 150px; 
+    height: 50px; 
+    font-size: 16px; 
+    padding: 10px; 
+    border-radius: 10px; 
+    background-color: #400044; 
+    color: #ffffff; 
+    border: none; 
+    cursor: pointer; 
+
+
+  }
+
+  .radiobutonlar{
+    cursor: pointer; 
+  }
+
+
+
+  .democlass {
+    text-align: center;
+    font-weight: bold; 
+    color: black;
+  }
